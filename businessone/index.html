@@ -23,8 +23,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="header-top-left">
-                            <a href="#"><i class="fas fa-sign-in-alt"></i>login</a>
-                            <a href="#"><i class="far fa-user"></i>Register</a>
+                            <a href="#" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i>login</a>
+                            <a href="#" data-toggle="modal" data-target="#regiModal"><i class="far fa-user"></i>Register</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -51,7 +51,7 @@
                         <div class="logo-area">
                             <a href="#"><span>Bussiness</span>One</a>
                         </div>
-                    </div><!-- Logo-area-end-->
+                    </div><!-- Logoarea end-->
                     <div class="col-md-9">
                         <nav class="main-menu-area">
                             <ul class="main-menu">
@@ -62,16 +62,64 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
-                    </div><!-- Main-menu-area-end-->
+                    </div><!-- Main Menu area end-->
                 </div>
             </div>
         </div>
-        <!-- Header navigation-area-end-->
+        <!-- Header navigation area end-->
     </div>
     <!--Header area End-->
 
 
 
+
+<!-- Sign In Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-uppercase" id="exampleModalLabel">Login/Sign in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+            <input class="form-control" type="text" name="name" placeholder="Enter your name">
+            <input class="form-control mt-3" type="email" name="email" placeholder="Enter your email">
+            <button class="btn btn-primary text-uppercase mt-3" type="submit">sign in</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-capitalize">create an account <a href="" data-toggle="modal" data-target="#regiModal">Register</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Register Modal -->
+<div class="modal fade" id="regiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-uppercase" id="exampleModalLabel">Register Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+            <input class="form-control" type="text" name="name" placeholder="Enter your name">
+            <input class="form-control mt-3" type="email" name="email" placeholder="Enter your email">
+            <button class="btn btn-primary text-uppercase mt-3" type="submit">Register</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-capitalize">Already have an account <a href="" data-toggle="modal" data-target="#loginModal">Sign in</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!--    jQuery-->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
